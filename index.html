@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/958b0131c3.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="imageBg">
+            <button class="showModal"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="timer">
+            <h1 id="eventName">Nowy rok za:</h1>
+            <div class="dateWindow">
+                <h1 class="time" id="h1Days"></h1>
+                <p class="text">Dni</p>
+            </div>
+            <div class="dateWindow">
+                <h1 class="time" id="h1Hours"></h1>
+                <p class="text">Godzin</p>
+            </div>
+            <div class="dateWindow">
+                <h1 class="time" id="h1Minutes"></h1>
+                <p class="text">Minut</p>
+            </div>
+            <div class="dateWindow">
+                <h1 class="time" id="h1Seconds"></h1>
+                <p class="text">Sekund</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <h1>Ustawienia</h1>
+        <p class="modalText">Nazwa wydarzenia</p>
+        <input type="text" id="titleInput">
+        <div class="modalDate">
+            <p class="modalText">Dzień:</p>
+            <p class="modalText">Miesiąc:</p>
+            <p class="modalText">Rok:</p>
+            <input type="number" min="1" max="31" value="1" id="day">
+            <input type="number" min="1" max="12" value="1" id="month">
+            <input type="number" min="0" value="2023" id="year">
+        </div>
+        <p class="modalText">Link do obrazka</p>
+        <input type="text" id="bgImage">
+        <button class="save">Zapisz</button>
+    </div>
+    
+</body>
+</html>
